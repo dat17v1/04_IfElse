@@ -12,8 +12,10 @@ public class RunPerson
     person1.whichAgeGroup();
     person1.isPersonsNameCaseInsensitive("peter", "Jensen");
 
-    // Use method that returns something
-    person1.getFirstname();
+    // Use method that returns something -
+    // Catch returned value in firstname variable.
+    String firstname = person1.getFirstname();
+    
 
     Person person3 = new Person("Peter", "Jensen", 12, true);
     // person3.isPersonsName(null);
