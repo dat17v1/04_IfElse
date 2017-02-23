@@ -19,10 +19,28 @@ public class Person
     this.age = age;
   }
 
+  public void changeFirstname(String firstname) {
+    // Do not implement a rule like this!
+    // It is better to implement the rule in here.
+    // This is an example of a method calling a method!
+    FirstnameRule rule = new FirstnameRule();
+    boolean isAllowed = rule.isFirstnameChangeAllowed(firstname);
+
+    String personsFirstname = getFirstname();
+    
+    if (isAllowed) {
+      this.firstname = firstname;
+    }
+  
+  }
 
   // Get method that returns Something
   public String getFirstname() {
+    // kode her
+    
     return this.firstname;
+    
+    // ingen kode her
   }
 	
 	//The methods has to work no matter what the actual values
